@@ -1,5 +1,7 @@
 # Desktop clap → Jarvis-style welcome
 
+Python-Skript, das auf Ihr Standardmikrofon hört und einen Begrüßungsfluss mit doppeltem Klatschen ausführt (Spotify, Chrome-Fenster, ElevenLabs-Stimme, Cursor). Siehe Konstante-Variablen oben in jarvis.py für das Verhalten und dessen Tuning.
+
 Python script that listens to your default microphone and runs a **double-clap** welcome flow (Spotify, Chrome windows, ElevenLabs voice, Cursor). See constants at the top of `jarvis.py` for behavior and tuning.
 
 ## Setup
