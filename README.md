@@ -73,3 +73,10 @@ Edit the constants at the top of `jarvis.py`:
 - **No reaction to claps:** Lower `SPIKE_RATIO` slightly or speak/clap closer to the mic.
 - **Spam logs:** Raise `SPIKE_RATIO` or `COOLDOWN_S`.
 - **No welcome speech:** Set `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID` in `.env` and restart the terminal so variables load.
+
+## - Fehlerbehebung
+- **Falsches oder leises Mikrofon**: Beim Start prüft das Skript Ihre Standard-Windows-Eingabe. Wenn es leise ist, wählt es automatisch das lauteste funktionierende Mikrofon aus. Um ein bestimmtes Gerät zu setzen, legen Sie `JARVIS_INPUT_DEVICE` in `.env` (Index- oder Namens-Teilzeichenfolge von `sounddevice.query_devices()`) fest.
+- **PortAudio- / Audiofehler**: Aktualisieren Sie die Audiotreiber oder versuchen Sie eine andere SAMPLE_RATE.
+- **Keine Reaktion auf Klatschen**: SPIKE_RATIO leicht senken oder näher am Mikrofon sprechen / klatschen.
+- **Spam-Protokolle**: Erhöhe SPIKE_RATIO oder COOLDOWN_S.
+- **Keine Begrüßungsrede**: Setzen Sie ELEVENLABS_API_KEY und ELEVENLABS_VOICE_ID in .env und starte das Terminal neu, damit die Variablen geladen werden.
